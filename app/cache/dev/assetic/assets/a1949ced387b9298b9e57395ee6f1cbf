@@ -1,0 +1,36 @@
+.nav{
+    position: absolute;
+    bottom: 38px;
+    right: 5px;
+}
+
+.nav span{
+    background-color: #000;
+    color:#fff;
+    padding:2px 4px;
+    cursor: pointer;
+    
+}
+.nav span:hover{
+    background-color: #fff;
+    color: #000;
+}
+    
+    
+    #carrousele1{
+    border:solid 10px #99A79A;
+    width: 800 px;
+    height: 300 px;
+    margin:auto;
+    position:relative;
+    
+
+}
+.slide{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 712px;
+    height: 264px;
+}
+  

@@ -1,0 +1,46 @@
+universal_homepage:
+    pattern:  /
+    defaults: { _controller: UniversalBundle:Default:accueil }
+    
+    
+    
+universal_labo:
+    pattern:  /labo
+    defaults: { _controller: UniversalBundle:Default:labo }
+    
+universal_medicaments:
+    pattern:  /medicaments
+    defaults: { _controller: UniversalBundle:Default:medicaments } 
+    
+universal_carriere:
+    pattern:  /carriere
+    defaults: { _controller: UniversalBundle:Default:carriere } 
+    
+universal_nosClients:
+    pattern: /clients
+    defaults: { _controller: UniversalBundle:Default:clients }
+    
+universal_plan:
+    pattern: /plan 
+    defaults: { _controller: UniversalBundle:Default:plan }
+    
+universal_contact:
+    pattern: /contact 
+    defaults: { _controller: UniversalBundle:Default:contact }
+    
+universal_intranet:
+    pattern: /intranet
+    defaults: { _controller: UniversalBundle:Default:intranet }
+    
+universal_actualite:
+    pattern: /actualite
+    defaults: { _controller: UniversalBundle:Default:actualite }
+    
+    
+universal_ajout:
+    pattern: /ajout
+    defaults: { _controller: UniversalBundle:Admin:ajout }
+    
+    
+    
+    

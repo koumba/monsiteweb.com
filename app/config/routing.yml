@@ -1,0 +1,5 @@
+universal:
+    resource: "@UniversalBundle/Resources/config/routing.yml"
+    prefix:   /universal/
+    
+

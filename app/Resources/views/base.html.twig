@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Monsiteweb.com{% endblock %}</title>
+
+
+        {% stylesheets 'bundles/universal/css/*' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+
+
+        <link rel="stylesheet" href="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')}}">
+
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <style>
+        h3{
+            color: #99A79A;
+        }
+        </style>
+
+</head>
+
+<body> 
+
+    <div class="container-fluid">  
+        <header>
+
+            <h2>Universal Pharma</h2> 
+
+            {% image '@UniversalBundle/Resources/public/images/logo2.jpg'
+    filter='jpegoptim' output='/images/logo2.jpg' %}
+            <img src="{{ asset_url }}" alt="logo2" style="width:300px; height: 200px;"/>
+            {% endimage %}
+
+        </header>
+
+        <div class="menu" style="height: 100px;padding-top: 25px;">
+            <div class="navigation">
+                <ul>
+                    <li><a href="{{ path('universal_homepage') }}">Accueil</a></li> 
+                    <li><a href="{{ path('universal_labo') }}">Notre Labo</a></li> 
+                    <li><a href="{{ path('universal_medicaments') }}">Les Médicaments</a></li>
+                    <li><a href="{{ path('universal_carriere') }}">Offres d'emploi</a></li>
+                    <li><a href="{{ path('universal_nosClients') }}">Nos Clients</a></li> 
+                    <li><a href="{{ path('universal_plan') }}">Plan d'accès</a></li> 
+                    <li><a href="{{ path('universal_contact') }}">Contact</a></li> 
+                    <li><a href="{{ path('universal_intranet') }}">Intranet</a></li> 
+                    <li><a href="{{ path('universal_actualite') }}">Actualités</a></li> 
+                </ul>  
+            </div>
+        </div>
+        {% block body %} {% endblock body %}
+
+
+        <footer>
+            <div id="footer">
+
+
+                <p><a href="{{ path('universal_homepage') }}">Accueil</a></p>
+                <p><a href="{{ path('universal_actualite') }}">Actualités</a></p>
+                <p><a href="">Mention Légales</a></p>
+                <p><a href="">Plan du Site</a></p>
+                <p>Copyright 2015 © - Création DL/ DIANY Koumba </p>
+
+
+            </div>
+
+        </footer>
+
+
+
+
+        {% block Javascripts %} {% endblock  %}
+    </div> 
+</body>
+</html>
+
+

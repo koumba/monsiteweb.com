@@ -1,0 +1,59 @@
+{%extends "::base.html.twig"%}
+
+{% block body %}    
+    <div class="contact">
+        <h3>Nous contacter</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-6">  
+            <div class="formulaire">
+                <form action="" method="post">
+                    <label>Nom:</label><br />
+                    <input name="Nom" type="text" value="" ><br />
+                    <label>Prénom:</label><br />
+                    <input name="prenom" type="text" value="" ><br />
+                    <label>Société:</label><br />
+                    <input name="société" type="text" value=""><br />
+                    <label>Adresse:</label><br />
+                    <input name="Adresse" type="text" value=""><br />
+                    <label>Code Postal:</label><br />
+                    <input name="Code Postal" type="text" value=""><br />
+                    <label>Ville: </label><br />
+                    <input name="Ville" type="text" value=""><br />
+                    <label>Pays:  </label><br />
+                    <input name="Pays" type="text" value=""><br />
+                    <label>Email: </label><br />
+                    <input name="Email" type="text" value=""><br />
+                    <label>Tel:</label><br />
+                    <input name="Tel" type="text" value=""><br />  
+                </form>
+
+
+                <div class="message">
+                    <h3>Votre Message:</h3><br />
+                    <textarea id="message" name="message"></textarea>
+
+                </div>
+                <div id="submit">
+                    <input type="submit" value="Envoyer votre message"><br />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div style="color:#99A79A;">
+                <h4><srtong>Universal Pharma</srtong></h4>  
+            </div>
+            <p>72 Impasse des Carrières, 75016 Paris</p>
+            <p>Tel: +33(0) 1 53 01 93 40</p>
+            <p>Fax: +33(0) 1 53 01 93 42</p>
+            <p>Email: info@universalpharma.com</p>
+
+        </div>
+    </div> 
+
+
+
+
+{% endblock  %}  {# empty Twig template #}

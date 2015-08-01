@@ -1,0 +1,33 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+var carousel = {
+    nbSlide: 0,
+    nbCurrent: 1,
+    elemCurrent: null,
+    elem: null,
+    init: function (elem) {
+        this.nbSlide = elem.find(".slide").length;
+        //créer la pagination
+        elem.append('<div class="navigation"></div>');
+        for (var i = 1; i <= this.nbSlide; i++) {
+            elem.find(".navigation").append("<span>" + i + "</span>" );
+        }
+        elem.find(".navigation a span ").click(function(){carousel.gotoSlide($(this).text()); })
+        
+        this.elem=elem;
+        elem.find(".slide").hide();
+        elem.find(".slide:first").show();
+        elemCurrent= elem.find(".slide:first");
+    },
+    gotoSlide: function(num){
+        alert(num);
+    }
+}
+$(function () {
+    carousel.init($("#carousel"));
+});

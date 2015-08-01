@@ -1,0 +1,22 @@
+{# empty Twig template #}
+
+{% for user in users %}
+    <section>
+        <ul>
+
+            <li>{{ user.civilite }}</li>
+            <li>{{ user.nom }}</li>
+            <li>{{ user.prenom }}</li>
+            <li>{{ user.login }}</li>
+            <li>{{ user.motPasse }}</li>
+            <li>{{ user.adresse }}</li>
+            <li>{{ user.codePostal }}</li>
+            <li>{{ user.ville }}</li>
+            <li>{{ user.dateEmbauche }}</li>
+            <li>{{ user.dateCreation }}</li>
+            <li>{{ user.dateExpiration }}</li>
+            <li>{{ user.etat }}</li>
+            <li>{{ user.statut }}</li>
+        </ul>
+    </section>
+{% endfor %}

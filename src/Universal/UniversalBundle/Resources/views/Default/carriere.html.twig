@@ -1,0 +1,45 @@
+{%extends "::base.html.twig"%}
+
+{% block body %}    
+    <div class="carriere" style="color:#99A79A;">
+        <h3>Offres d'emploi </h3>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <p>Poste vacants en pharmacie:</p>
+            <ul>
+                <li>Pharmacien(ne) Titulaire à Bruxelles</li>
+                <li>Assistant(e) à Paris</li>
+                <li>Assistant(e) à Vincenne</li>
+                <li>Assistant(e) itinérant(e) à Toulouse</li>
+            </ul>
+            <p>Pour toute candidature veuillez envoyé votre cv et lettre de motivation à l'adresse email:
+            <div style="color:#8B0000;"<strong>info@universalpharma.com</strong></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            {% image '@UniversalBundle/Resources/public/images/coeur feuille.jpg'
+    filter='jpegoptim' output='/images/coeur feuille.jpg' %}
+    <img src="{{ asset_url }}" alt="coeur feuille" style="width:150px; height: 100px; "/>
+{% endimage %}
+        </div>
+
+    </div>
+    _______________________________________________
+
+    <div class="row">
+        <div class="col-md-4">
+            <p>Chauffeur indépendant:</p>
+            <p>Nous recherchons un chauffeur indépendant avec ou sans voiture pour livraisons de médicaments (pour la région ile de france ) </p>
+            <p>Pour toute candidature veuillez envoyé votre cv et lettre de motivation à l'adresse email:
+            <div style="color:#8B0000;"<strong>info@universalpharma.com</strong></p>
+            </div>
+        </div>
+    </div>
+
+{% endblock  %}     
+
+{# empty Twig template #}

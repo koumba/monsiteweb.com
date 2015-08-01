@@ -1,0 +1,7 @@
+parameters:
+#    universal.example.class: Universal\UniversalBundle\Example
+
+services:
+#    universal.example:
+#        class: %universal.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

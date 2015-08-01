@@ -1,0 +1,67 @@
+{%extends "::base.html.twig"%}
+
+{% block body %}   
+    
+    <div class="row">
+         <div class="col-md-6">
+             <h3>Notre Labo</h3>
+            <div style="color:#000000;"
+                 <p><strong>Mot du président</strong></p>
+                <p><strong>« Ambitieux et modestes, nous nous impliquons avec détermination et bon sens dans l’amélioration continue du traitement des pathologies quotidiennes dans le monde.
+                        Nous nous appuyons avant tout, sur notre énergie et sur notre engagement individuel et collectif fondé sur l’intégration de nombreuses cultures et disciplines, cela dans un esprit de confiance et d’entraide. »</strong>
+                </p>
+
+            </div>
+        </div>
+
+<div class="col-md-6">
+            {% image '@UniversalBundle/Resources/public/images/president.jpg'
+    filter='jpegoptim' output='/images/president.jpg' %}
+            <img src="{{ asset_url }}" alt="president" style="width:400px; height: 200px "/>
+            {% endimage %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <h3>L'entreprise</h3>
+            <p>Créé en 2009, le laboratoire Universal Pharma dont le siège se trouve à PARIS –
+                72, Impasse des Carrières, 75016 Paris– comprend, outre le siège, plusieurs laboratoires de recherche à Vitry/Seine et dix établissements qui fabriquent des médicaments.
+                Universal Pharma est née de la fusion de plusieurs firmes américaines (spécialisé dans le secteur des maladies virales dont le SIDA et les hépatites) et européennes
+                En 2012, les deux géants pharmaceutiques ont uni leurs forces pour créer un leader de ce secteur industriel. L’entité Universal Pharma Europe a établi son siège administratif à Paris.
+                La France a été choisie comme témoin pour l’amélioration du suivi de l’activité de visite.
+
+                Dans l’industrie pharmaceutique, les forces de vente représentent la première ligne de contact avec vos prescripteurs : c’est le fer de lance de votre stratégie et de votre communication.<br />
+
+                Universal Pharma souhaite:<br />
+
+                – renforcer la publicité de ses produits pharmaceutiques à travers des consultants médicaux. <br />
+
+                – développer une équipe de visiteurs médicaux ville, hôpital ou pharmacie.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Quelques chiffres</h3>
+            <p>8 000 comptes mails<br />
+
+                3000 postes informatiques bureautiques ou recherche, 50 – 100 To données sauvegardées
+
+                Une dizaine d’applications de gestion « lourdes » et une vingtaine plus légères
+
+                Tous les domaines métiers du laboratoire pharmaceutiques sont concernés :</p>
+        </div>   
+
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Domaine d'étude</h3>
+            <p>Universal Pharma c’est 1200 consultants (visiteurs médicales).
+                La force commerciale d'un laboratoire pharmaceutique est assurée par un travail de conseil et d'information auprès des prescripteurs. Les visiteurs médicaux (ou délégués) démarchent les médecins, pharmaciens, infirmières et autres métiers de santé susceptibles de prescrire aux patients les produits du laboratoire.
+                L'entreprise souhaite porter une attention nouvelle à sa force commerciale dans un double objectif : obtenir une vision plus régulière et efficace de l'activité menée sur le terrain auprès des praticiens, mais aussi redonner confiance aux équipes malmenées par les fusions récentes</p>
+
+        </div>
+    </div>
+{% endblock  %}     
+
+
+
